@@ -1,0 +1,85 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.left-pane {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.right-pane {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.splitter {
+  width: 8px;
+  cursor: col-resize;
+  background: linear-gradient(90deg, rgba(0,0,0,0.06), rgba(0,0,0,0.02));
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+
+.splitter:hover {
+  background: linear-gradient(90deg, rgba(0,0,0,0.12), rgba(0,0,0,0.04));
+}
+
+.error-banner {
+  background-color: #ff4444;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.error-banner button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.error-banner button:hover {
+  opacity: 0.8;
+}
+
+/* Toast (Top-Right) */
+.toast-container {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.toast {
+  background: rgba(0,0,0,0.85);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  font-size: 13px;
+}

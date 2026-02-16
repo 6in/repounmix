@@ -1,0 +1,21 @@
+<file_summary>
+<purpose>
+Sample Repomix XML for testing
+</purpose>
+</file_summary>
+
+<directory_structure>
+src/
+  index.ts
+  utils/
+    helper.ts
+README.md
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="src/index.ts">
+import { helper } from './utils/helper';
+
+console.log(helper());

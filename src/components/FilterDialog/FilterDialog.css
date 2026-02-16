@@ -1,0 +1,206 @@
+.filter-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.filter-dialog {
+  background: var(--bg-secondary, #1e1e1e);
+  border: 1px solid var(--border-color, #3e3e3e);
+  border-radius: 8px;
+  width: 90%;
+  max-width: 700px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.filter-dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color, #3e3e3e);
+}
+
+.filter-dialog-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--text-primary, #e0e0e0);
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-secondary, #999);
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.close-button:hover {
+  background: var(--hover-bg, #2a2a2a);
+  color: var(--text-primary, #e0e0e0);
+}
+
+.filter-dialog-content {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section h3 {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  color: var(--text-primary, #e0e0e0);
+}
+
+.filter-section label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: var(--text-primary, #e0e0e0);
+}
+
+.filter-section input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.filter-help {
+  margin: 0 0 8px 0;
+  font-size: 0.875rem;
+  color: var(--text-secondary, #999);
+  line-height: 1.5;
+}
+
+.filter-help code {
+  background: var(--bg-tertiary, #2a2a2a);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85em;
+}
+
+.filter-section textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  background: var(--bg-tertiary, #2a2a2a);
+  border: 1px solid var(--border-color, #3e3e3e);
+  border-radius: 4px;
+  color: var(--text-primary, #e0e0e0);
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+  resize: vertical;
+}
+
+.filter-section textarea:focus {
+  outline: none;
+  border-color: var(--primary-color, #007acc);
+}
+
+.preset-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.preset-buttons button {
+  padding: 6px 12px;
+  background: var(--bg-tertiary, #2a2a2a);
+  border: 1px solid var(--border-color, #3e3e3e);
+  border-radius: 4px;
+  color: var(--text-primary, #e0e0e0);
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.preset-buttons button:hover {
+  background: var(--hover-bg, #3a3a3a);
+  border-color: var(--primary-color, #007acc);
+}
+
+.filter-info {
+  background: var(--bg-tertiary, #2a2a2a);
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.filter-info h4 {
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+  color: var(--text-primary, #e0e0e0);
+}
+
+.filter-info ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--text-secondary, #999);
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
+
+.filter-info code {
+  background: var(--bg-secondary, #1e1e1e);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  color: var(--text-primary, #e0e0e0);
+}
+
+.filter-dialog-footer {
+  padding: 15px 20px;
+  border-top: 1px solid var(--border-color, #3e3e3e);
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancel-button,
+.apply-button {
+  padding: 8px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.cancel-button {
+  background: var(--bg-tertiary, #2a2a2a);
+  color: var(--text-primary, #e0e0e0);
+  border: 1px solid var(--border-color, #3e3e3e);
+}
+
+.cancel-button:hover {
+  background: var(--hover-bg, #3a3a3a);
+}
+
+.apply-button {
+  background: var(--primary-color, #007acc);
+  color: white;
+}
+
+.apply-button:hover {
+  background: var(--primary-hover, #005a9e);
+}

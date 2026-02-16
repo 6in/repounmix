@@ -1,0 +1,110 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar-left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.chat-group {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.chat-button {
+  padding: 6px 10px;
+  background: rgba(255,255,255,0.85);
+  font-weight: 600;
+}
+
+.chat-button.active {
+  background: rgba(0,0,0,0.12);
+  color: white;
+}
+
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.toolbar-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+.toolbar-button:hover:not(:disabled) {
+  background: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.toolbar-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.toolbar-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.toolbar-button.primary {
+  background: white;
+  font-weight: 600;
+}
+
+.save-status {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.status-saving {
+  background: rgba(255, 255, 255, 0.2);
+  animation: pulse 1.5s infinite;
+}
+
+.status-saved {
+  background: rgba(76, 175, 80, 0.3);
+}
+
+.status-error {
+  background: rgba(244, 67, 54, 0.3);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.app-title {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}

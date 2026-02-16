@@ -1,0 +1,2 @@
+- 回答は日本語で。
+- git commit、git pushは実施しないこと

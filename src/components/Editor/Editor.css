@@ -1,0 +1,98 @@
+.editor-tabs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--editor-bg);
+}
+
+.tabs-header {
+  display: flex;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tab {
+  padding: 12px 24px;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+.tab:hover {
+  background: var(--hover-bg);
+  color: var(--text-primary);
+}
+
+.tab.active {
+  background: var(--editor-bg);
+  color: var(--text-primary);
+  border-bottom-color: var(--primary-color);
+}
+
+.editor-content {
+  flex: 1;
+  overflow: hidden;
+}
+
+.editor-panel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-file-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.editor-file-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.editor-file-path {
+  color: var(--text-primary);
+  font-size: 13px;
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+}
+
+.editor-file-language {
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  background: var(--bg-tertiary);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.editor-file-size {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.editor-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.editor-empty p:first-child {
+  font-size: 64px;
+  margin-bottom: 16px;
+  opacity: 0.3;
+}
