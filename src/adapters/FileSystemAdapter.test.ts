@@ -40,7 +40,7 @@ const createMockFileSystemAPI = () => {
   };
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  (global as any).window = {
+  (globalThis as any).window = {
     showDirectoryPicker: vi.fn().mockResolvedValue(mockDirectoryHandle)
   };
 
